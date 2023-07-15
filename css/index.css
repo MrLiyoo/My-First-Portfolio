@@ -45,13 +45,11 @@
  }
 
  a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
-  outline: none;
-  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For iOS Safari */
+  -webkit-tap-highlight-color: transparent; /* For older versions of Android */
+  -moz-tap-highlight-color: transparent; /* For older versions of Firefox */
+  -ms-tap-highlight-color: transparent; /* For older versions of IE/Edge */
 }
-
 
  /* HEADER */
 
